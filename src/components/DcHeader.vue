@@ -105,7 +105,7 @@ export default {
 
             nav {
                 width: 65%;
-                line-height: 70px;
+                line-height: 69px;
 
                 li {
                     margin: 0 10px;
