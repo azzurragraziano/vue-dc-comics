@@ -43,25 +43,21 @@ export default {
                     text: 'digital comics',
                     image: require('../assets/img/buy-comics-digital-comics.png'),
                     url: '#'
-                    //40
                 },
                 {
                     text: 'dc merchandise',
                     image: require('../assets/img/buy-comics-merchandise.png'),
                     url: '#'
-                    //50
                 },
                 {
                     text: 'subscriptions',
                     image: require('../assets/img/buy-comics-subscriptions.png'),
                     url: '#'
-                    //52
                 },
                 {
                     text: 'shop locator',
                     image: require('../assets/img/buy-comics-shop-locator.png'),
                     url: '#'
-                    // height: 50px
                 },
                 {
                     text: 'dc power visa',
