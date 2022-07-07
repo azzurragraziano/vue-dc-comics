@@ -107,7 +107,9 @@
 
                 <!-- sign up btn -->
                 <div class="btn">
-                    sign-up now!
+                   <a href="#">
+                        sign-up now!
+                   </a>
                 </div>
                 
                 <!-- social links list -->

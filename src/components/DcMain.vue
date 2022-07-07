@@ -129,6 +129,7 @@ main {
 
                 .load-more {
                     padding: 7px 40px;
+                    font-size: 12px;
                 }
             }
            

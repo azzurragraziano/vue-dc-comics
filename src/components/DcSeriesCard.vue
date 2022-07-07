@@ -1,7 +1,9 @@
 <template>
     <div class="serie-card">
-        <img :src="seriesDetails.thumb" :alt="seriesDetails.series">
-        <h2>{{ seriesDetails.series }}</h2>
+        <a href="#">
+            <img :src="seriesDetails.thumb" :alt="seriesDetails.series">
+            <h2>{{ seriesDetails.series }}</h2>
+        </a>
     </div>
 </template>
 
@@ -20,15 +22,18 @@ export default {
     margin: 15px;
 
     img {
-        height: 185px;
-        width: 100%;     
+        height: 150px;
+        width: 150px;
+        overflow: hidden;     
         object-fit: cover;
         object-position: top;
         margin: 15px 0;
     }
-}
 
-h2 {
-    font-size: 14px;
+    h2 {
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
 }
 </style>
