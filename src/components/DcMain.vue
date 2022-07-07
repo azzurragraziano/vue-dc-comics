@@ -3,7 +3,7 @@
         <!--  content -->
         <section class="content">
             <div class="container">
-                <div class="current-series-text">
+                <div class="current-series-text btn">
                     current series
                 </div>
 
@@ -11,8 +11,10 @@
                     <DcSeriesCard v-for="card, index in dcSeries" :key="index" :seriesDetails="card"/>
                 </div>
 
-                <div class="load-more-btn">
-                    <a href="#">LOAD MORE</a>
+                <div class="d-flex">
+                    <span class="load-more btn">
+                        <a href="#">LOAD MORE</a>
+                    </span>
                 </div>
 
             </div>
@@ -103,21 +105,33 @@ main {
             font-size: 25px;
             position: relative;
             
-            .current-series-text {
+            .btn {
                 background-color: $dc-main-secondary-color;
+                font-size: 18px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            .current-series-text {
                 position: absolute;
                 top: -55px;
                 left: 0;
                 padding: 5px 16px;
-                font-size: 18px;
-                font-weight: bold;
-                text-transform: uppercase;
             }
 
             .cards-container {
                 flex-wrap: wrap;
                 justify-content: space-between;
             }
+
+            .d-flex {
+                justify-content: center;
+
+                .load-more {
+                    padding: 7px 40px;
+                }
+            }
+           
         }
     }
 
