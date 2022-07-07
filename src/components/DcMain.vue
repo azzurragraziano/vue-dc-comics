@@ -3,7 +3,18 @@
         <!--  content -->
         <section class="content">
             <div class="container">
-                --> content goes here 
+                <div class="current-series-text">
+                    current series
+                </div>
+
+                <div class="cards-container d-flex">
+                    <DcSeriesCard v-for="card, index in dcSeries" :key="index" :seriesDetails="card"/>
+                </div>
+
+                <div class="load-more-btn">
+                    <a href="#">LOAD MORE</a>
+                </div>
+
             </div>
         </section>
 
@@ -28,16 +39,24 @@
                         </a>
                     </li>
                 </ul>
+
             </div>
         </section>
    </main>
 </template>
 
 <script>
+import DcJsonSeries from '../assets/dc-comics.json'
+import DcSeriesCard from './DcSeriesCard.vue'
+
 export default {
-    name: "ProductsList",
+    name: "DcMain",
+    components: {
+        DcSeriesCard
+    },
     data() {
         return {
+            dcSeries: DcJsonSeries,
             buyLinks: [
                 {
                     text: 'digital comics',
@@ -82,6 +101,23 @@ main {
 
         .container {
             font-size: 25px;
+            position: relative;
+            
+            .current-series-text {
+                background-color: $dc-main-secondary-color;
+                position: absolute;
+                top: -55px;
+                left: 0;
+                padding: 5px 16px;
+                font-size: 18px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            .cards-container {
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
         }
     }
 
