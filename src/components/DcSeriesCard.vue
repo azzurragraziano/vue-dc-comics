@@ -22,16 +22,15 @@ export default {
     margin: 15px;
 
     img {
-        height: 150px;
-        width: 150px;
-        overflow: hidden;     
+        width: 100%;
+        aspect-ratio: 1/1;   
         object-fit: cover;
         object-position: top;
         margin: 15px 0;
     }
 
     h2 {
-        font-size: 11px;
+        font-size: 0.7rem;
         text-transform: uppercase;
         font-weight: 400;
     }
